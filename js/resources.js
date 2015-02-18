@@ -75,6 +75,7 @@
      * the same as calling load() on that URL.
      */
     function get(url) {
+        //console.log("Resource get " + url);
         return resourceCache[url];
     }
 
