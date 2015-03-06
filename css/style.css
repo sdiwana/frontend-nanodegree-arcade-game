@@ -1,3 +1,55 @@
 body {
-    text-align: center;
+
+	text-align: center;
+
+	font-family: verdana;
+
 }
+
+
+#canvas {
+
+	margin-top: 50px;
+
+}
+
+
+#rules {
+
+	margin-top: 0;
+
+	display: block;
+
+}
+
+
+#slider {
+
+	font-size: 24px;
+
+	color: 'black';
+
+	text-decoration: none;
+
+}
+
+
+#rulesList {
+
+	list-style-type: none;
+
+}
+
+#rulesList li {
+
+	font-family: verdana;
+
+	font-size: 20px;
+
+	color: 'black';
+
+}
+
+
+
+
