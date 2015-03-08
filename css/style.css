@@ -1,55 +1,33 @@
 body {
-
 	text-align: center;
-
 	font-family: verdana;
-
+	color: 'black';
 }
 
-
+/* Canvas spacing at top */
 #canvas {
-
 	margin-top: 50px;
-
 }
 
-
-#rules {
-
-	margin-top: 0;
-
-	display: block;
-
-}
-
-
+/* Game rules */
+/* Rules caption anchor */
 #slider {
-
 	font-size: 24px;
-
-	color: 'black';
-
 	text-decoration: none;
-
 }
 
+/* rule text */
+#rules {
+	margin-top: 0;
+	display: block;
+}
 
+/* rules list */
 #rulesList {
-
 	list-style-type: none;
-
 }
 
-#rulesList li {
-
-	font-family: verdana;
-
+/* rules list items */
+li {
 	font-size: 20px;
-
-	color: 'black';
-
 }
-
-
-
-

@@ -1,10 +1,11 @@
+/* Sandhya - After First Review - removed Console.log statement. */
+/* Also, took out double spacing. */
 
 /*--------------------------------------------------------------------*/
 /* Rules toggle */
 /*--------------------------------------------------------------------*/
 function drawRules(doc) {
-    console.log("IN RULES JS FILE");
-    //create an anchor with RULES text to toggle Rules div
+    //create an anchor with game rules text to toggle rules div
     var newAnchor = doc.createElement('a');
     newAnchor.setAttribute('href','#');
     newAnchor.setAttribute('id', 'slider')
@@ -19,6 +20,7 @@ function drawRules(doc) {
     newUl2.setAttribute('id', 'rulesList');
     newDiv3.appendChild(newUl2);
 
+    //Add rule text to each li
     var newLi1 = doc.createElement('li');
     newLi1.appendChild(doc.createTextNode("1. Mouse click a player on pink pad to change active player."));
     var newLi2 = doc.createElement('li');
@@ -46,22 +48,15 @@ function drawRules(doc) {
     newUl2.appendChild(newLi7);
     newUl2.appendChild(newLi8);
 
-    //finally append the div
+    //finally append the div to body
     doc.body.appendChild(newDiv3);
-
 
     //Toggle game rules div when anchor text RULES is clicked
     doc.getElementById('slider').onclick = function() {
-
         var rulesDiv = doc.getElementById('rules');
-
         if(rulesDiv.style.display == 'none')
-
             rulesDiv.style.display = 'block';
-
         else
-
             rulesDiv.style.display = 'none';
-
     };
 };

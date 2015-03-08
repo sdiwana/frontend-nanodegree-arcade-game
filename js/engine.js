@@ -1,3 +1,6 @@
+/* Sandhya - After First Review - eliminated commented call to a function that */
+/* was not implemented.  Also, took out double spacing from added code */
+
 /* Engine.js
  * This file provides the game loop functionality (update entities and render),
  * draws the initial game board on the screen, and then calls the update and
@@ -34,15 +37,12 @@ var Engine = (function(global) {
     // Enclosing canvas in div to provide some blank space at top.
     var newDiv1 = doc.createElement('div');
     newDiv1.setAttribute('id', 'canvas');
-
     canvas.width = 505;
     canvas.height = 656;
-
     newDiv1.appendChild(canvas);
     doc.body.appendChild(newDiv1);
-
+    // Providing Rules of the game that can be toggled open and closed
     drawRules(doc);
-    //selectPlayers(doc);
 
 /*--------------------------------------------------------------------*/
 /* Main function
@@ -100,7 +100,6 @@ var Engine = (function(global) {
      */
     function update(dt) {
         updateEntities(dt);
-
         // Checking from Player Update function.
         // checkCollisions();
     }
@@ -113,18 +112,15 @@ var Engine = (function(global) {
      * render methods.
      */
     function updateEntities(dt) {
-
-
+        /* Loop through all of the objects within the allEnemies, gem arrays
+        /* and player, and call the update functions. */
         allEnemies.forEach(function(enemy) {
             enemy.update(dt);
         });
-
         gems.forEach(function(gem) {
             gem.update(dt);
         });
-
         player.update();
-
     }
 
     /* This function initially draws the "game level", it will then call
@@ -176,20 +172,15 @@ var Engine = (function(global) {
      * on your enemy and player entities within app.js
      */
     function renderEntities() {
-        /* Loop through all of the objects within the allEnemies array and call
-         * the render function you have defined.
-         */
-
+        /* Loop through all of the objects within the allEnemies, gem array,
+        /* and player, and call the render function you have defined. */
         allEnemies.forEach(function(enemy) {
             enemy.render();
         });
-
         gems.forEach(function(gem) {
             gem.render();
         });
-
         player.render();
-
     }
 
     /* This function does nothing but it could have been a good place to
