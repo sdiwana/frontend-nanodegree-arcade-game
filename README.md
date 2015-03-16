@@ -6,6 +6,16 @@ Students should use this rubric: https://www.udacity.com/course/viewer#!/c-ud015
 for self-checking their submission.
 <<<<<<< HEAD
 
+After Second Review
+	- 1.  Click on index.html to start the game or
+	2.a. Run python server on your terminal from same directory as your index file and other directories with following command:  python -m SimpleHTTPServer
+	2.b. Then in your browser, type ip and port to run the game: 127.0.0.1:8000
+
+	- Once again trying to post Readme.
+
+
+
+
 After First Review:
 1.  Eliminated double spacing in all files.
 2.  Created consistent var declaration in engine.js.
