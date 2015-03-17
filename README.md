@@ -8,9 +8,14 @@ for self-checking their submission.
 
 # After Second Review
 ## Running the Frogger game
-1. Run python server on your terminal from same directory as your project with the following command:
+
+### From github pages
+- http://sdiwana.github.io/frontend-nanodegree-arcade-game/
+
+### From localhost
+- Run python server on your terminal from same directory as your project with the following command:
 *python -m SimpleHTTPServer*
-2. Then in your browser, type ip and port to run the game: 127.0.0.1:8000
+- Then in your browser, type ip and port to run the game: 127.0.0.1:8000
 
 
 # After First Review:
