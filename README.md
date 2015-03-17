@@ -42,7 +42,7 @@ for self-checking their submission.
 - In addition, provided renderThenInitPlayer(), checkCollisions(), renderPlayerBoard(), renderScoreBoard(), renderScore(), renderLevel(), renderGemCount(), and renderGameCount() functionalities.
 
 ### events.js
-= provided an addEventListener() function to catch click for player selection
+- provided an addEventListener() function to catch click for player selection
 
 ### index.html
 - included enemy.js, gem.js, player.js, and events.js
