@@ -14,6 +14,8 @@ for self-checking their submission.
 - http://sdiwana.github.io/frontend-nanodegree-arcade-game/
 
 ### Or from localhost
+- Fork the following repository to your computer:
+- https://github.com/sdiwana/frontend-nanodegree-arcade-game#after-second-review
 - Run python server on your terminal from same directory as your project with the following command:
 *python -m SimpleHTTPServer*
 - Then in your browser, type ip and port to run the game: 127.0.0.1:8000
