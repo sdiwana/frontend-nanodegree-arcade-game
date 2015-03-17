@@ -7,10 +7,16 @@ for self-checking their submission.
 <<<<<<< HEAD
 
 # After Second Review
+
 ## Running the Frogger game
-1. Run python server on your terminal from same directory as your project with the following command:
+
+### Run from github.io pages
+- http://sdiwana.github.io/frontend-nanodegree-arcade-game/
+
+### Or from localhost
+- Run python server on your terminal from same directory as your project with the following command:
 *python -m SimpleHTTPServer*
-2. Then in your browser, type ip and port to run the game: 127.0.0.1:8000
+- Then in your browser, type ip and port to run the game: 127.0.0.1:8000
 
 
 # After First Review:
@@ -19,7 +25,7 @@ for self-checking their submission.
 3. Took out SelectPlayer function and call, as they were not used.
 4. Fixed click event functionality and eliminated redundant condition checking.
 5. Took out some commented code that were left there by mistake.
-6. NOT combining files (review does not seem to strictly require combining back) as it may create more work for reviewer??
+6. NOT combining files (review does not seem to strictly require combining back) as it may create more work for reviewer.
 
 
 # Before First Review:
