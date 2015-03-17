@@ -26,20 +26,27 @@ for self-checking their submission.
 ### engine.js
 - added div around canvas for show only.
 - added display rules functionality by including gameRules.js file.
+
 ### app.js
 - app.js now hold the global variable declarations.  Separated player.js, enemy.js, gem.js, and events.js from app.js.
+
 ### enemy.js
 - provided class constructor, and update and render functionalities.  It also provides a function to instantiate enemy array based on number of enemies.
+
 ### gem.js
 - provided class constructor, and update and render functionalities.  It also provides a function to instantiate gem array based on the level of the game.
+
 ### player.js
 - This is where most of the action takes place.
 - provided class constructor, and update and render functionalities.
 - In addition, provided renderThenInitPlayer(), checkCollisions(), renderPlayerBoard(), renderScoreBoard(), renderScore(), renderLevel(), renderGemCount(), and renderGameCount() functionalities.
+
 ### events.js
 = provided an addEventListener() function to catch click for player selection
+
 ### index.html
 - included enemy.js, gem.js, player.js, and events.js
+
 ### style.css
 - provided some style for game rules text.
 
