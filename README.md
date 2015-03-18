@@ -6,6 +6,12 @@ Students should use this rubric: https://www.udacity.com/course/viewer#!/c-ud015
 for self-checking their submission.
 <<<<<<< HEAD
 
+# After Fourth Review
+- Took out semi-colons from all 'if and for' statements from player.js, events.js, and gem.js.
+
+# After Third Review
+- Did not change anything, code for collision was there.
+
 # After Second Review
 
 ## Running the Frogger game

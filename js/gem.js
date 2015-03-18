@@ -30,13 +30,14 @@ Gems.prototype.render = function() {
 
 
 Gems.prototype.update = function(dt) {
+    // After nth review, removed semi-colon.
     if (this.x > board.width) {
         // Reset gems to starting point, if it exceeds board width
         this.x = 0;
     } else {
         // else allow gem to move
         this.x = this.x + this.speed *dt;
-    };
+    }
 };
 
 
@@ -55,9 +56,9 @@ var gemArray = function(numGems) {
 // depends on the level of the game.
     var tempArr = [],
         firstSpeed = 450;
-
+    // After nth review, removed semi-colon.
     for (i = 0; i < numGems; i++) {
         tempArr[i] = new Gems(tile.width, (tile.height * (i+1)), gemImageArray[i], (firstSpeed + (i*100)));
-    };
+    }
     return tempArr;
 };

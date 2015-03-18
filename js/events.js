@@ -16,6 +16,7 @@ document.addEventListener('click', function(event) {
         playerX = 0;
 
     // Loop through player list
+    // After nth review, removed semi-colon.
     for (i = 0; i < player.playerList.length; i++) {
         playerX = tile.width * i;
         if (y > playerY && y < playerY + tile.height && x > playerX && x < playerX + tile.width) {
@@ -23,8 +24,8 @@ document.addEventListener('click', function(event) {
             // First player's x coordinate starts at 0 then moves on to 5th player, each
             // spaced at tile.width of 101
             player.sprite = player.playerList[i];
-        };
-    };
+        }
+    }
 }, false);
 
 

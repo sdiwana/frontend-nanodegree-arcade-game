@@ -15,7 +15,7 @@
 // Variable to reset setInterval ID
 var setIntervalID;
 
-var Player = function(x, y, sprite) {
+var Player = function(x, y) {
     // Player class or constructor
     this.width = 50,
     this.height = 50,
@@ -40,9 +40,10 @@ var Player = function(x, y, sprite) {
 
 Player.prototype.reset = function() {
     // When player reached water, it was rendered using setInterval, clear the setInterval.
+    // After nth review, removed semi-colon.
     if (this.y === 0) {
         clearInterval(setIntervalID);
-    };
+    }
 
     // Position player in middle column of bottom row
     this.x = board.width/2 - tile.width/2;
@@ -54,6 +55,7 @@ Player.prototype.update = function() {
     // This is where all calculations, collision check, and re-rendering takes place
     var waterLevel = 0;
     // If player out of right, left, or down boundary, put player in starting position.
+    // After nth review, removed semi-colon.
     if ((this.x >= board.width) || // Exceeds canvas width on right side
         ((this.x + this.width) <= 0) || // Or is less than the srating point of x on left side
         (this.y >= (board.height - tile.height))) { // Or goes out of bottom range of canvas
@@ -64,7 +66,7 @@ Player.prototype.update = function() {
             this.handleLevelandGameIncrement();
     } else { //check for and handle collision with enemies or gems
             this.handleEnemyAndGemCollisions();
-    };
+    }
 };
 
 
@@ -105,6 +107,7 @@ Player.prototype.handleLevelandGameIncrement = function() {
     // Increment level as long as max level is not reached
     if (this.score === maxScore) {
         // Keep incrementing level as long as it hasn't reached max level
+        // After nth review, removed semi-colons.
         if (this.level <= (maxLevel - 1)) {
             this.level++;
             // When one level reached, adjust score to 0 for next level
@@ -118,28 +121,30 @@ Player.prototype.handleLevelandGameIncrement = function() {
             allEnemies = enemyArray(this.gameCount + 3);
             //reset score, level, gemCount, and gameCount
             this.resetAndRenderAll();
-        };
-    };
+        }
+    }
 };
 
 
 Player.prototype.handleEnemyAndGemCollisions = function() {
     // Check enemy collision
+    // After nth review, removed semi-colon.
     if (this.checkCollisions(allEnemies)) {
         // Put player back to initial position if collision with enemy
         this.reset();
         // Deduct one point from player for colliding with enemy
         this.renderScore(this.score--);
-    };
+    }
 
     //check gem collision
+    // After nth review, removed semi-colon.
     var gem;
     if (gem = this.checkCollisions(gems)) {
         // Put gems back to initial position if collision with player
         gem.reset();
         // Increment gem score if player collides with a gem
         this.renderGemCount(this.gemCount++);
-    };
+    }
 };
 
 
@@ -162,6 +167,7 @@ Player.prototype.checkCollisions = function(collisionArray) {
     var collided;
     // Check collision between player and enemy or player and gem
     // Check if x,y coordinate of player is within the colliding object's rectangle
+    // After nth review, removed semi-colons.
     for (i = 0; i < collisionArray.length; i++) {
         collided = collisionArray[i];
         if (this.x < collided.x + collided.width &&
@@ -169,8 +175,8 @@ Player.prototype.checkCollisions = function(collisionArray) {
             this.y < collided.y + collided.height &&
             this.y + this.height > collided.y) {
                 return collided;
-            };
-    };
+            }
+    }
 };
 
 
@@ -179,9 +185,10 @@ Player.prototype.renderPlayerBoard = function() {
     ctx.fillStyle = '#CC0066';
     ctx.fillRect(0, board.height, board.width, tile.height);
     // Go through player.playerlist and display players set apart by tile.width
+    // After nth review, removed semi-colon.
     for (i = 0; i < this.playerList.length; i++) {
         ctx.drawImage(Resources.get(this.playerList[i]), tile.width * i, board.height - tile.width);
-    };
+    }
 };
 
 
